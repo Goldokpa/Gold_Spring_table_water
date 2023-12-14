@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto+Condensed&family=Roboto+Mono:wght@200&family=Roboto:wght@300&display=swap');
+/* Partials import */
+@import "partials/variables";
 
 body {
     text-align: center;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     padding: 0;
+    background-color: #f8f8f8;
 }
 
-li,
-a {
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    color: #fff;
-    text-decoration: none;
-}
-
+/* Header Styles */
 header {
     background-color: #144d7b;
     color: #fff;
@@ -23,6 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 2%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav_links {
@@ -46,109 +42,78 @@ header {
     color: #0d3456;
 }
 
-.description,
-.outdoors,
-.hydration {
-    background-position: center center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* Hero Section Styles */
+#hero {
+    background-image: url('https://via.placeholder.com/1920x720/ffffff/0d3456?text=Sustainability');
+    background-size: cover;
+    background-position: center;
     color: #fff;
+    text-align: center;
+    padding: 100px 20px;
 }
 
-.description {
-    background-image: url('background.jpg');
-    background-size: cover;
-    height: 500px;
-}
-
-.outdoors {
-    background-image: url('outdoor.png');
-    background-size: cover;
-    height: 500px;
-}
-
-.hydration {
-    background-image: url('hydration-background.jpg');
-    background-size: cover;
-    height: 500px;
-}
-
-.main {
-    padding: 50px;
-}
-
-.description h2,
-.outdoors h4,
-.hydration h2 {
-    font-size: 50px;
+#hero h2 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
-.description p,
-.outdoors p,
-.hydration p {
-    font-size: 18px;
+#hero p {
+    font-size: 1.2em;
     line-height: 1.6;
-    margin-top: 0;
-    margin-bottom: 20px;
 }
 
+/* Commitment Section Styles */
+#commitment {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+#commitment h2 {
+    color: #144d7b;
+}
+
+#commitment article {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Initiatives Section Styles */
+#initiatives {
+    margin-top: 20px;
+}
+
+#initiatives h3 {
+    color: #144d7b;
+}
+
+#initiatives ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#initiatives li {
+    margin-bottom: 15px;
+}
+
+/* Discover and Sustain Sections Styles */
 .discover,
-.sustain,
-.hydration-tips {
-    text-align: left;
-    padding: 40px;
-    max-width: 1000px;
-    margin: 0 auto 30px;
+.sustain {
+    background-color: #f8f8f8;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .discover h2,
-.sustain h2,
-.hydration h2 {
-    font-size: 40px;
+.sustain h2 {
     color: #144d7b;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-
-.discover p,
-.sustain p,
-.hydration-tips p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 20px;
 }
 
 .discover .button,
 .sustain .button {
-    display: inline-block;
-    padding: 15px 30px;
-    background-color: #144d7b;
-    color: #fff;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-left: 40px;
-    border-radius: 20px;
+    margin-top: 20px;
 }
 
-.discover .button:hover,
-.sustain .button:hover {
-    background-color: #0d3456;
-}
-
-/* Styles */
-
-header {
-    background-color: #144d7b;
-    color: white;
-    padding: 1em;
-}
-
+/* Products Page Styles */
 .products {
     padding: 3em;
     text-align: center;
@@ -209,6 +174,41 @@ header {
     background-color: #0d3456;
 }
 
+/* Outdoor Section Styles */
+.outdoors {
+    background-image: url('outdoor.png');
+    background-size: cover;
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* Main Section Styles */
+.main {
+    padding: 50px;
+}
+
+/* Hydration Section Styles */
+.hydration {
+    background-image: url('hydration-background.jpg');
+    background-size: cover;
+    height: 500px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+/* ... (existing styles) ... */
+
 footer {
     background-color: #144d7b;
     color: white;
@@ -216,6 +216,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 40px;
 }
 
 .contact-section {
